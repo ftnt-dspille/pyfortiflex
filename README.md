@@ -6,10 +6,10 @@ allocation for labs that license many VMs from one config.
 ```python
 from pyfortiflex import FortiFlexClient, mint_token, owner_description
 
-flex = FortiFlexClient.from_env()          # FORTIFLEX_USER / FORTIFLEX_PASS (IAM API user)
+flex = FortiFlexClient.from_env()  # FORTIFLEX_USER / FORTIFLEX_PASS (IAM API user)
 owner = owner_description("soar-801-validate", "soar801", "fabric-pod.example.com")
-result = mint_token(flex, 12345, owner)    # config id or name
-result.serial_number, result.token         # redeem the token on the VM
+result = mint_token(flex, 12345, owner)  # config id or name
+result.serial_number, result.token  # redeem the token on the VM
 ```
 
 ## Why allocation needs care
