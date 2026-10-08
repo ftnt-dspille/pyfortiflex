@@ -16,19 +16,19 @@ from .client import (
     config_id_of,
     credentials_from_env,
 )
-from .types import Config, Entitlement, Group, Program, ProductType
 from .products import PRODUCT_FAMILIES, config_matches, family_for, single_active_config
+from .types import Config, Entitlement, Group, ProductType, Program
 
 __all__ = [
     "API_URL",
     "AUTH_URL",
+    "PRODUCT_FAMILIES",
     "Config",
     "Entitlement",
     "FlexError",
     "FortiFlexClient",
     "Group",
     "MintResult",
-    "PRODUCT_FAMILIES",
     "ProductType",
     "Program",
     "config_id_of",
