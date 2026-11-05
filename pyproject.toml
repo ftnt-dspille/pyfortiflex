@@ -30,7 +30,7 @@ dependencies = ["requests>=2.31"]
 test = ["pytest>=7.0", "pytest-cov>=4.0"]
 typecheck = ["mypy>=1.13", "types-requests"]
 # Pinned so a local run and CI agree; bump deliberately.
-lint = ["ruff==0.16.10"]
+lint = ["ruff==0.17.3"]
 
 [project.urls]
 Homepage = "https://github.com/ftnt-dspille/pyfortiflex"
